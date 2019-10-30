@@ -21,11 +21,15 @@ The build process is performed in [Travis CI](https://travis-ci.org/codeyourinfr
 
 ## Test yourself
 
-Inside your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html), run:
+First of all, create your [Python virtual environment](https://docs.python.org/3/tutorial/venv.html) and activate it:
 
-`pip install -r requirements.txt`
+`python -m venv env && source env/bin/activate`
 
-And then:
+After that, install all requirements:
+
+`pip install wheel && pip install -r requirements.txt`
+
+And finally execute the test:
 
 `molecule test`
 
